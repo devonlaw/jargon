@@ -45,12 +45,30 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VJh-oC-mxV">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="1200"/>
                                         <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="scrollPic" translatesAutoresizingMaskIntoConstraints="NO" id="Ke2-zX-wH6">
+                                                <rect key="frame" x="0.0" y="0.0" width="375.00000000000023" height="1200"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="1200" id="kSu-hp-Gyb"/>
+                                                </constraints>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qrl-KF-nK2">
+                                                <rect key="frame" x="160" y="585" width="55" height="30"/>
+                                                <state key="normal" title="Button6">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="Button6:" destination="BYZ-38-t0r" eventType="touchUpInside" id="E3T-Zz-sLs"/>
+                                                    <segue destination="KRW-lQ-OFZ" kind="show" id="Tbm-eF-Cw2"/>
+                                                </connections>
+                                            </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0RB-6Q-JjQ">
                                                 <rect key="frame" x="160" y="1145" width="55" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="okO-1O-3ae"/>
                                                 </constraints>
-                                                <state key="normal" title="Button2"/>
+                                                <state key="normal" title="Button2">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
                                                 <connections>
                                                     <action selector="Button2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8QE-qo-9aa"/>
                                                     <segue destination="KRW-lQ-OFZ" kind="show" id="fjZ-xW-s7Y"/>
@@ -61,23 +79,72 @@
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="MYb-UM-4jS"/>
                                                 </constraints>
-                                                <state key="normal" title="Button1"/>
+                                                <state key="normal" title="Button1">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
                                                 <connections>
                                                     <action selector="Button1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iJ1-33-DwZ"/>
                                                     <segue destination="KRW-lQ-OFZ" kind="show" id="f6s-F2-ga9"/>
                                                 </connections>
                                             </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mqf-zh-Sb7">
+                                                <rect key="frame" x="160" y="96" width="55" height="30"/>
+                                                <state key="normal" title="Button3">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="Button3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9Lu-Yd-MqV"/>
+                                                    <segue destination="KRW-lQ-OFZ" kind="show" id="xko-ub-R7C"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fqf-7q-umi">
+                                                <rect key="frame" x="160" y="245" width="55" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="55" id="AtB-bE-cz5"/>
+                                                </constraints>
+                                                <state key="normal" title="Button5">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="Button5:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HyZ-hE-JDz"/>
+                                                    <segue destination="KRW-lQ-OFZ" kind="show" id="xaN-oz-VfY"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FWZ-pn-EvF">
+                                                <rect key="frame" x="156" y="437" width="63" height="32"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="32" id="ceD-wn-Wtw"/>
+                                                    <constraint firstAttribute="width" constant="63" id="vkd-eQ-Q0c"/>
+                                                </constraints>
+                                                <state key="normal" title="Button4">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="Button4:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KJs-kO-Dgg"/>
+                                                    <segue destination="KRW-lQ-OFZ" kind="show" id="iR2-iX-pMj"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="backgroundColor" red="0.86872571243523322" green="0.86872571243523322" blue="0.86872571243523322" alpha="0.073531029929577468" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
+                                            <constraint firstItem="Fqf-7q-umi" firstAttribute="leading" secondItem="mqf-zh-Sb7" secondAttribute="leading" id="25K-6j-aVG"/>
                                             <constraint firstItem="0RB-6Q-JjQ" firstAttribute="centerX" secondItem="VJh-oC-mxV" secondAttribute="centerX" id="4q7-XO-fzW"/>
+                                            <constraint firstItem="mqf-zh-Sb7" firstAttribute="top" secondItem="qJo-iG-YB3" secondAttribute="bottom" constant="41" id="H4N-EQ-WJn"/>
+                                            <constraint firstItem="Ke2-zX-wH6" firstAttribute="leading" secondItem="VJh-oC-mxV" secondAttribute="leading" id="M16-tn-j7A"/>
+                                            <constraint firstItem="FWZ-pn-EvF" firstAttribute="baseline" secondItem="qrl-KF-nK2" secondAttribute="baseline" constant="-147" id="S9j-UM-JRa"/>
                                             <constraint firstItem="qJo-iG-YB3" firstAttribute="top" secondItem="VJh-oC-mxV" secondAttribute="top" constant="25" id="bMK-If-2Ot"/>
                                             <constraint firstItem="qJo-iG-YB3" firstAttribute="centerX" secondItem="VJh-oC-mxV" secondAttribute="centerX" id="bTc-v6-QIb"/>
+                                            <constraint firstItem="Fqf-7q-umi" firstAttribute="leading" secondItem="qrl-KF-nK2" secondAttribute="leading" id="ct8-w2-f4Z"/>
+                                            <constraint firstAttribute="trailing" secondItem="Ke2-zX-wH6" secondAttribute="trailing" id="fsA-6k-QTa"/>
+                                            <constraint firstItem="Fqf-7q-umi" firstAttribute="centerX" secondItem="FWZ-pn-EvF" secondAttribute="centerX" id="jHG-y9-U0Y"/>
+                                            <constraint firstItem="Ke2-zX-wH6" firstAttribute="top" secondItem="VJh-oC-mxV" secondAttribute="top" id="oLI-o1-b5P"/>
+                                            <constraint firstItem="Fqf-7q-umi" firstAttribute="top" secondItem="VJh-oC-mxV" secondAttribute="top" constant="245" id="vAo-lm-Bay"/>
+                                            <constraint firstItem="mqf-zh-Sb7" firstAttribute="leading" secondItem="0RB-6Q-JjQ" secondAttribute="leading" id="x1l-0U-iuC"/>
                                             <constraint firstAttribute="bottom" secondItem="0RB-6Q-JjQ" secondAttribute="bottom" constant="25" id="zik-ei-o3T"/>
+                                            <constraint firstItem="qrl-KF-nK2" firstAttribute="centerY" secondItem="VJh-oC-mxV" secondAttribute="centerY" id="zvL-nc-2FV"/>
                                         </constraints>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="VJh-oC-mxV" firstAttribute="leading" secondItem="NxE-Ph-WtC" secondAttribute="leading" id="5OZ-i3-JnQ"/>
                                     <constraint firstAttribute="trailing" secondItem="VJh-oC-mxV" secondAttribute="trailing" id="TX0-72-y58"/>
@@ -117,15 +184,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Auz-Al-C3i">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="scrollPic" translatesAutoresizingMaskIntoConstraints="NO" id="Auz-Al-C3i">
+                                <rect key="frame" x="0.0" y="20" width="375.00000000000023" height="647"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LOR-iw-psi">
                                 <rect key="frame" x="166.5" y="152" width="42" height="21"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EBI-Zo-5uE">
                                 <rect key="frame" x="14" y="34" width="34" height="30"/>
@@ -185,7 +253,10 @@
             <point key="canvasLocation" x="1567" y="33"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="scrollPic" width="850" height="4500"/>
+    </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="f6s-F2-ga9"/>
+        <segue reference="Tbm-eF-Cw2"/>
     </inferredMetricsTieBreakers>
 </document>

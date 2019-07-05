@@ -24,6 +24,18 @@ class ViewController: UIViewController {
     @IBAction func Button2(_ sender: Any) {
         category = "Button2"
     }
+    @IBAction func Button3(_ sender: Any) {
+        category = "Button3"
+    }
+    @IBAction func Button4(_ sender: Any) {
+        category = "Button4"
+    }
+    @IBAction func Button5(_ sender: Any) {
+        category = "Button5"
+    }
+    @IBAction func Button6(_ sender: Any) {
+        category = "Button6"
+    }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let destViewController: ViewWord = segue.destination as! ViewWord
         destViewController.textToChange = category

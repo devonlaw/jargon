@@ -41,6 +41,14 @@ class ViewWord: UIViewController {
             fileName = "category1"
         case "Button2":
             fileName = "category2"
+        case "Button3":
+            fileName = "category3"
+        case "Button4":
+            fileName = "category4"
+        case "Button5":
+            fileName = "category5"
+        case "Button6":
+            fileName = "category6"
         default:
             fileName = "error"
         }
