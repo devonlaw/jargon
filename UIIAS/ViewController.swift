@@ -17,6 +17,30 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
+    @IBOutlet weak var searchBar: UITextField!
+    
+    @IBAction func go(_ sender: Any) {
+        switch searchBar.text {
+        case "Button1":
+            category = "Button1"
+        case "Button2":
+            category = "Button2"
+        case "Button3":
+            category = "Button3"
+        case "Button4":
+            category = "Button4"
+        case "Button5":
+            category = "Button5"
+        case "Button6":
+            category = "Button6"
+        default:
+            category = "error"
+        }
+        searchBar.text?.removeAll()
+        //test to make sure this is being saved properly
+        print(category)
+    }
+    
     @IBAction func Button1(_ sender: Any) {
         category = "Button1"
     }
