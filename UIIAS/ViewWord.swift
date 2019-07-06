@@ -12,10 +12,12 @@ import UIKit
 class ViewWord: UIViewController {
     
     var textToChange = String()
-    var lineNumber = 0
+    var lineNumber = 1
     var array: [String] = []
     var fileName = String()
     var canTap = true
+    var canTapBack = true
+    
     
     
     override func viewDidLoad() {
@@ -29,8 +31,14 @@ class ViewWord: UIViewController {
     @IBOutlet weak var textView: UITextView!
     
     @IBAction func nextWord(_ sender: Any) {
-        if(canTap){
+        if (canTap){
             lineNumber += 1
+            setContent(array: array)
+        }
+    }
+    @IBAction func previousWord(_ sender: Any) {
+        if (canTapBack) {
+            lineNumber -= 1
             setContent(array: array)
         }
     }
@@ -69,9 +77,16 @@ class ViewWord: UIViewController {
     func setContent(array: Array<String>) {
         if(array[lineNumber] != ""){
             textView.text = array[lineNumber]
+            canTapBack = true
+            canTap = true
         } else {
-            textView.text = "No more words in this category, please select another."
-            canTap = false
+            if lineNumber == 0 {
+                textView.text = "Can't go back any further."
+                canTapBack = false
+            } else {
+                textView.text = "No more words in this category, please select another."
+                canTap = false
+            }
         }
     }
 }

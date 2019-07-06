@@ -250,30 +250,49 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ojc-sC-aXx">
-                                <rect key="frame" x="168" y="617" width="39" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ojc-sC-aXx">
+                                <rect key="frame" x="216" y="617" width="39" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="39" id="tD7-T0-4al"/>
+                                    <constraint firstAttribute="height" constant="30" id="w0e-9h-cuA"/>
+                                </constraints>
                                 <state key="normal" title="NEXT">
-                                    <color key="titleColor" red="1" green="0.89512283785867353" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" red="0.15643988577706203" green="0.57407707253886009" blue="0.033363125437039724" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                                 <connections>
                                     <action selector="nextWord:" destination="KRW-lQ-OFZ" eventType="touchUpInside" id="vUQ-WB-1Zi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9a6-1i-Ozw">
+                                <rect key="frame" x="100" y="617" width="73" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="73" id="Eo6-s4-8NW"/>
+                                    <constraint firstAttribute="height" constant="30" id="tOW-Jn-aDM"/>
+                                </constraints>
+                                <state key="normal" title="PREVIOUS">
+                                    <color key="titleColor" name="systemRedColor" catalog="System" colorSpace="catalog"/>
+                                </state>
+                                <connections>
+                                    <action selector="previousWord:" destination="KRW-lQ-OFZ" eventType="touchUpInside" id="UO8-k1-T6j"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="pbp-Nu-1O6" firstAttribute="bottom" secondItem="Auz-Al-C3i" secondAttribute="bottom" id="29d-Ek-3MS"/>
-                            <constraint firstItem="ojc-sC-aXx" firstAttribute="centerX" secondItem="Lm0-bb-iNw" secondAttribute="centerX" id="7O9-1m-4Vo"/>
+                            <constraint firstItem="pbp-Nu-1O6" firstAttribute="bottom" secondItem="ojc-sC-aXx" secondAttribute="bottom" constant="20" id="5pr-p4-9x5"/>
+                            <constraint firstItem="pbp-Nu-1O6" firstAttribute="trailing" secondItem="ojc-sC-aXx" secondAttribute="trailing" constant="120" id="7b7-hs-Gmc"/>
                             <constraint firstItem="pbp-Nu-1O6" firstAttribute="trailing" secondItem="Auz-Al-C3i" secondAttribute="trailing" id="EgM-kq-0l8"/>
                             <constraint firstItem="Auz-Al-C3i" firstAttribute="leading" secondItem="pbp-Nu-1O6" secondAttribute="leading" id="GD0-7d-sB3"/>
                             <constraint firstAttribute="bottom" secondItem="ojc-sC-aXx" secondAttribute="bottom" constant="20" symbolic="YES" id="HbC-ah-LTY"/>
                             <constraint firstItem="EBI-Zo-5uE" firstAttribute="leading" secondItem="pbp-Nu-1O6" secondAttribute="leading" constant="14" id="OcF-Wh-Nvh"/>
                             <constraint firstItem="Lm0-bb-iNw" firstAttribute="leading" secondItem="pbp-Nu-1O6" secondAttribute="leading" constant="40" id="Ojc-bR-Fk8"/>
                             <constraint firstItem="pbp-Nu-1O6" firstAttribute="trailing" secondItem="Lm0-bb-iNw" secondAttribute="trailing" constant="40" id="VQz-8h-YX8"/>
-                            <constraint firstItem="ojc-sC-aXx" firstAttribute="leading" secondItem="pbp-Nu-1O6" secondAttribute="leading" constant="164" id="Z7u-eX-fIF"/>
                             <constraint firstItem="pbp-Nu-1O6" firstAttribute="bottom" secondItem="Lm0-bb-iNw" secondAttribute="bottom" constant="80" id="c9t-a6-6i5"/>
                             <constraint firstItem="Lm0-bb-iNw" firstAttribute="top" secondItem="LOR-iw-psi" secondAttribute="bottom" constant="60" id="fHM-gb-dY6"/>
+                            <constraint firstItem="9a6-1i-Ozw" firstAttribute="leading" secondItem="pbp-Nu-1O6" secondAttribute="leading" constant="100" id="fmn-KO-dI7"/>
                             <constraint firstItem="EBI-Zo-5uE" firstAttribute="top" secondItem="pbp-Nu-1O6" secondAttribute="top" constant="14" id="gtJ-6d-eYU"/>
+                            <constraint firstItem="pbp-Nu-1O6" firstAttribute="bottom" secondItem="9a6-1i-Ozw" secondAttribute="bottom" constant="20" id="hzU-S5-NUJ"/>
                             <constraint firstItem="LOR-iw-psi" firstAttribute="centerX" secondItem="cTG-yt-6Hy" secondAttribute="centerX" id="mvA-jY-diP"/>
                             <constraint firstItem="pbp-Nu-1O6" firstAttribute="bottom" secondItem="LOR-iw-psi" secondAttribute="bottom" constant="494" id="rU1-RC-ohH"/>
                             <constraint firstItem="Auz-Al-C3i" firstAttribute="top" secondItem="pbp-Nu-1O6" secondAttribute="top" id="sDs-t0-Xyg"/>
