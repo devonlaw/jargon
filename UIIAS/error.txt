@@ -1,1 +1,1 @@
-Invalid search.
+Invalid search. Go back and try again.

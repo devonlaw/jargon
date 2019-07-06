@@ -34,7 +34,7 @@ class ViewController: UIViewController {
         case "Button6":
             category = "Button6"
         default:
-            category = "error"
+            category = searchBar.text!
         }
         searchBar.text?.removeAll()
         //test to make sure this is being saved properly

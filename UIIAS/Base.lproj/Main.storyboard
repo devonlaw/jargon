@@ -168,9 +168,6 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <action selector="setSearch:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="pyB-9R-lBz"/>
-                                </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="45f-Be-A7h">
                                 <rect key="frame" x="307" y="590" width="44" height="30"/>
@@ -180,6 +177,7 @@
                                 </state>
                                 <connections>
                                     <action selector="go:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aWO-mT-hx6"/>
+                                    <segue destination="KRW-lQ-OFZ" kind="presentation" id="6bA-0k-iXg"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -297,6 +295,6 @@
         <image name="scrollPic" width="850" height="4500"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="fjZ-xW-s7Y"/>
+        <segue reference="Tbm-eF-Cw2"/>
     </inferredMetricsTieBreakers>
 </document>
