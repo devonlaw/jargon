@@ -47,7 +47,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="1200"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="scrollPic" translatesAutoresizingMaskIntoConstraints="NO" id="Ke2-zX-wH6">
-                                                <rect key="frame" x="0.0" y="0.0" width="375.00000000000023" height="1200"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="1200"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="1200" id="kSu-hp-Gyb"/>
                                                 </constraints>
@@ -55,7 +55,7 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qrl-KF-nK2">
                                                 <rect key="frame" x="160" y="585" width="55" height="30"/>
                                                 <state key="normal" title="Button6">
-                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="Button6:" destination="BYZ-38-t0r" eventType="touchUpInside" id="E3T-Zz-sLs"/>
@@ -226,7 +226,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="scrollPic" translatesAutoresizingMaskIntoConstraints="NO" id="Auz-Al-C3i">
-                                <rect key="frame" x="0.0" y="20" width="375.00000000000023" height="647"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LOR-iw-psi">
