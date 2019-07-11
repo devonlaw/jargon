@@ -42,6 +42,7 @@ class SelectJargon: UIViewController {
         if goBack == false {
             let destViewController: WordView = segue.destination as! WordView
             destViewController.jargon = jargonSelected
+            destViewController.isCustom = false
         }
     }
 }

@@ -15,9 +15,11 @@ class WordView: UIViewController {
     var lineNumber = 1
     var canTap = true
     var canTapBack = true
+    var isCustom = false
     var array: [String] = []
     @IBOutlet weak var word: UILabel!
     @IBOutlet weak var wordDesc: UITextView!
+    @IBOutlet weak var edit: UIButton!
     @IBAction func previous(_ sender: Any) {
         if (canTapBack) {
             lineNumber -= 1
@@ -32,6 +34,8 @@ class WordView: UIViewController {
         }
     }
     
+    @IBAction func editTapped(_ sender: Any) {
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         if jargon != "" {
@@ -47,19 +51,13 @@ class WordView: UIViewController {
         }
         array = findLines()
         setContent(array: array)
+        if isCustom == false {
+            edit.isHidden = true
+        } else {
+            edit.isHidden = false
+        }
     }
     
-//    func findLines() -> Array<String> {
-//        var arrayOfStrings: [String] = []
-//        do {
-//            let path = Bundle.main.path(forResource: fileName, ofType: "txt")
-//            let data = try String(contentsOfFile: path!, encoding: String.Encoding.utf8)
-//            arrayOfStrings = data.components(separatedBy: "\n")
-//        } catch let error as NSError {
-//            print(error)
-//        }
-//        return arrayOfStrings
-//    }
     func findLines() -> Array<String> {
         var arrayOfStrings: [String] = []
         do {
@@ -89,14 +87,19 @@ class WordView: UIViewController {
             wordLabel.text = word
             canTapBack = true
             canTap = true
+            if isCustom == true {
+                edit.isHidden = false
+            }
         } else {
             wordLabel.text = ""
             if lineNumber == 0 {
                 wordDesc.text = "Can't go back any further."
                 canTapBack = false
+                edit.isHidden = true
             } else {
                 wordDesc.text = "No more words in this category, please select another."
                 canTap = false
+                edit.isHidden = true
             }
         }
     }

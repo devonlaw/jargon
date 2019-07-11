@@ -59,10 +59,33 @@ class SelectCustom: UIViewController {
         return arrayOfStrings
     }
     
+    func fileExists(name: String) -> Bool {
+        let fileName = "allTextFiles"
+        var arrayOfStrings: Array<String> = []
+        do {
+            let path = Bundle.main.path(forResource: fileName, ofType: "txt")
+            let data = try String(contentsOfFile: path!, encoding: String.Encoding.utf8)
+            arrayOfStrings = data.components(separatedBy: "\n")
+        } catch { print(error) }
+        
+        for line in arrayOfStrings {
+            if line == name {
+                return true
+            }
+        }
+        return false
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if listPicked == true {
             let destViewController: WordView = segue.destination as! WordView
             destViewController.jargon = jargon
+            
+            if fileExists(name: jargon) {
+                destViewController.isCustom = false
+            } else {
+                destViewController.isCustom = true
+            }
         }
     }
 }

@@ -680,10 +680,24 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ds6-Ws-OBU">
+                                        <rect key="frame" x="150" y="467" width="75" height="30"/>
+                                        <color key="backgroundColor" white="1" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="UoA-V2-C12"/>
+                                        </constraints>
+                                        <state key="normal" title="Edit">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="editTapped:" destination="bxW-Vk-3Tn" eventType="touchUpInside" id="L5u-3Q-Cil"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="Gp1-XF-wh0" firstAttribute="top" secondItem="EfS-PG-RrY" secondAttribute="top" id="33M-9x-Cvr"/>
+                                    <constraint firstAttribute="trailing" secondItem="ds6-Ws-OBU" secondAttribute="trailing" constant="150" id="DIy-Xb-GLj"/>
                                     <constraint firstItem="aoN-kh-mt7" firstAttribute="leading" secondItem="EfS-PG-RrY" secondAttribute="leading" constant="70" id="GR4-4E-FrP"/>
                                     <constraint firstItem="aoN-kh-mt7" firstAttribute="top" secondItem="EfS-PG-RrY" secondAttribute="top" constant="65" id="Hb0-DE-sKl"/>
                                     <constraint firstAttribute="trailing" secondItem="PWR-lQ-sk6" secondAttribute="trailing" constant="70" id="PiQ-a1-AnT"/>
@@ -698,7 +712,9 @@
                                     <constraint firstAttribute="trailing" secondItem="Aav-va-pgF" secondAttribute="trailing" constant="70" id="osC-VE-S2Q"/>
                                     <constraint firstAttribute="bottom" secondItem="Gp1-XF-wh0" secondAttribute="bottom" id="pMA-oe-Jlv"/>
                                     <constraint firstAttribute="bottom" secondItem="PWR-lQ-sk6" secondAttribute="bottom" constant="200" id="rPy-YK-3AG"/>
+                                    <constraint firstItem="ds6-Ws-OBU" firstAttribute="leading" secondItem="EfS-PG-RrY" secondAttribute="leading" constant="150" id="v0e-GM-HLj"/>
                                     <constraint firstItem="dHT-fV-qea" firstAttribute="top" secondItem="PWR-lQ-sk6" secondAttribute="bottom" constant="10" id="wHi-IB-RlW"/>
+                                    <constraint firstAttribute="bottom" secondItem="ds6-Ws-OBU" secondAttribute="bottom" constant="100" id="yDv-Da-OkZ"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -715,6 +731,7 @@
                         <viewLayoutGuide key="safeArea" id="w27-q8-ZxO"/>
                     </view>
                     <connections>
+                        <outlet property="edit" destination="ds6-Ws-OBU" id="49M-7k-3MZ"/>
                         <outlet property="word" destination="qzf-7c-3k2" id="SCD-mm-ALc"/>
                         <outlet property="wordDesc" destination="PWR-lQ-sk6" id="cwt-iv-krt"/>
                         <outlet property="wordLabel" destination="aoN-kh-mt7" id="jhU-8f-ZYL"/>
@@ -733,6 +750,6 @@
         <segue reference="9R0-5L-1vv"/>
         <segue reference="fE4-yP-wfq"/>
         <segue reference="xr3-DT-1F9"/>
-        <segue reference="Nug-5O-Mnl"/>
+        <segue reference="d4r-q5-cy8"/>
     </inferredMetricsTieBreakers>
 </document>
