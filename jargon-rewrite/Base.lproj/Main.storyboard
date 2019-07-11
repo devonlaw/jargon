@@ -190,6 +190,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="NXm-5H-kiA"/>
                     </view>
+                    <navigationItem key="navigationItem" id="tCX-0n-AVe"/>
                     <connections>
                         <outlet property="Button1" destination="lDs-2I-o7E" id="Zcu-8s-sig"/>
                         <outlet property="Button2" destination="1Oa-VN-tap" id="5dr-nG-ANJ"/>
@@ -729,9 +730,9 @@
         <image name="logo" width="400" height="200"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="gRU-0r-RVP"/>
+        <segue reference="9R0-5L-1vv"/>
         <segue reference="fE4-yP-wfq"/>
         <segue reference="xr3-DT-1F9"/>
-        <segue reference="ZSp-Oe-0D5"/>
+        <segue reference="Nug-5O-Mnl"/>
     </inferredMetricsTieBreakers>
 </document>
