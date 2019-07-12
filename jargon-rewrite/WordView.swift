@@ -172,7 +172,6 @@ class WordView: UIViewController {
         let file = jargon
         let DocumentDirURL = try! FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: true)
         let fileURL = DocumentDirURL.appendingPathComponent(file).appendingPathExtension("txt")
-        print(fileURL)
         outputText = "\n" + copyText(array: array)
         do {
             try outputText.write(to: fileURL, atomically: true, encoding: String.Encoding.utf8)
