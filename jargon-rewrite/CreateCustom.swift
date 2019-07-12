@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class CreateCustom: UIViewController {
+class CreateCustom: UIViewController, UITextViewDelegate {
     var fileName = String()
     var addWord = false
     var fileURL: URL?
@@ -147,6 +147,14 @@ class CreateCustom: UIViewController {
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
+    }
+    
+    func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
+        if text == "\n" {
+            textView.resignFirstResponder()
+            return false
+        }
+        return true
     }
     
     override func viewDidLoad() {

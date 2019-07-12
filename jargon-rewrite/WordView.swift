@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class WordView: UIViewController {
+class WordView: UIViewController, UITextViewDelegate {
     var jargon = String()
     var fileName = String()
     var lineNumber = 1
@@ -76,8 +76,18 @@ class WordView: UIViewController {
         setContent(array: array)
         wordDesc.textColor = UIColor.black
     }
+    
+    func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
+        if text == "\n" {
+            textView.resignFirstResponder()
+            return false
+        }
+        return true
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.wordDesc.delegate = self
         if jargon != "" {
             word.text = jargon
         } else {
@@ -177,20 +187,24 @@ class WordView: UIViewController {
             try outputText.write(to: fileURL, atomically: true, encoding: String.Encoding.utf8)
         } catch { print(error) }
     }
-}
-
-func copyText(array: Array<String>) -> String {
-    var outputText = String()
-    var cur = 0
-    let size = array.count
-    for line in array {
-        if cur == size || line == "" {
-            outputText.append(line)
-        } else {
-            outputText.append(line + "\n")
+    
+    func copyText(array: Array<String>) -> String {
+        var outputText = String()
+        var cur = 0
+        let size = array.count
+        for line in array {
+            if cur == size || line == "" {
+                outputText.append(line)
+            } else {
+                outputText.append(line + "\n")
+            }
+            cur += 1
         }
-        cur += 1
+        cur = 0
+        return outputText
     }
-    cur = 0
-    return outputText
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
 }
