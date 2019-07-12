@@ -30,6 +30,7 @@ class WordView: UIViewController {
         edit.setTitle("Edit", for: .normal)
         cancel.isHidden = true
         wordDesc.isEditable = false
+        confirmDisplayed = false
     }
     @IBOutlet weak var wordLabel: UILabel!
     @IBAction func next(_ sender: Any) {
@@ -40,6 +41,7 @@ class WordView: UIViewController {
         edit.setTitle("Edit", for: .normal)
         cancel.isHidden = true
         wordDesc.isEditable = false
+        confirmDisplayed = false
     }
     
     @IBAction func editTapped(_ sender: Any) {
