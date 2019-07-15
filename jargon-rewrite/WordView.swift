@@ -53,6 +53,7 @@ class WordView: UIViewController, UITextViewDelegate {
             wordDesc.textColor = UIColor.black
             wordDesc.isEditable = true
             confirmDisplayed = true
+            wordDesc.becomeFirstResponder()
         } else {
             //further editing is disabled
             edit.setTitle("Edit", for: .normal)
