@@ -149,15 +149,17 @@ class CreateCustom: UIViewController, UITextViewDelegate {
         self.view.endEditing(true)
     }
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        self.definition.delegate = self
+    }
+    
     func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
         if text == "\n" {
             textView.resignFirstResponder()
             return false
         }
         return true
-    }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
     }
 }

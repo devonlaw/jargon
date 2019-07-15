@@ -23,6 +23,7 @@ class SelectCustom: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         getCreatedLists()
+        createdLists.isEditable = false
     }
     
     func getCreatedLists() {
