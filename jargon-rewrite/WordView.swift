@@ -89,6 +89,7 @@ class WordView: UIViewController, UITextViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.wordDesc.delegate = self
+        jargon = jargon.lowercased()
         if jargon != "" {
             word.text = jargon
         } else {

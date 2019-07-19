@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A65B1D8822E0CB0C008BB29C /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65B1D8722E0CB0C008BB29C /* WebView.swift */; };
+		A65B1DC522E2134B008BB29C /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A65B1DC422E2134B008BB29C /* WebKit.framework */; };
+		A65B1DC722E23B17008BB29C /* webby.html in Resources */ = {isa = PBXBuildFile; fileRef = A65B1DC622E23B16008BB29C /* webby.html */; };
 		A6B03BFE22D3B97500C12DE5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B03BFD22D3B97500C12DE5 /* AppDelegate.swift */; };
 		A6B03C0022D3B97500C12DE5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B03BFF22D3B97500C12DE5 /* ViewController.swift */; };
 		A6B03C0322D3B97500C12DE5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6B03C0122D3B97500C12DE5 /* Main.storyboard */; };
@@ -45,6 +48,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A65B1D8722E0CB0C008BB29C /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		A65B1DC422E2134B008BB29C /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		A65B1DC622E23B16008BB29C /* webby.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = webby.html; sourceTree = "<group>"; };
 		A6B03BFA22D3B97500C12DE5 /* jargon-rewrite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "jargon-rewrite.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6B03BFD22D3B97500C12DE5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A6B03BFF22D3B97500C12DE5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -76,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A65B1DC522E2134B008BB29C /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,6 +103,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A65B1DC322E2134B008BB29C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A65B1DC422E2134B008BB29C /* WebKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A6B03BF122D3B97500C12DE5 = {
 			isa = PBXGroup;
 			children = (
@@ -103,6 +118,7 @@
 				A6B03C1122D3B97600C12DE5 /* jargon-rewriteTests */,
 				A6B03C1C22D3B97600C12DE5 /* jargon-rewriteUITests */,
 				A6B03BFB22D3B97500C12DE5 /* Products */,
+				A65B1DC322E2134B008BB29C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,10 +148,12 @@
 				A6B03C3B22D4D34A00C12DE5 /* Hockey.txt */,
 				A6B03C3422D4D33900C12DE5 /* Basketball.txt */,
 				A6B03C3622D4D33900C12DE5 /* Engineering.txt */,
+				A65B1DC622E23B16008BB29C /* webby.html */,
 				A6B03C3322D4D33900C12DE5 /* Volleyball.txt */,
 				A6B03C4322D50B1300C12DE5 /* allTextFiles.txt */,
 				A6B03C4522D50C3400C12DE5 /* error.txt */,
 				A6B03C4722D5104D00C12DE5 /* CreateCustom.swift */,
+				A65B1D8722E0CB0C008BB29C /* WebView.swift */,
 			);
 			path = "jargon-rewrite";
 			sourceTree = "<group>";
@@ -270,6 +288,7 @@
 				A6B03C0522D3B97600C12DE5 /* Assets.xcassets in Resources */,
 				A6B03C3722D4D33900C12DE5 /* Volleyball.txt in Resources */,
 				A6B03C0322D3B97500C12DE5 /* Main.storyboard in Resources */,
+				A65B1DC722E23B17008BB29C /* webby.html in Resources */,
 				A6B03C3822D4D33900C12DE5 /* Basketball.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -296,6 +315,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A6B03C4822D5104D00C12DE5 /* CreateCustom.swift in Sources */,
+				A65B1D8822E0CB0C008BB29C /* WebView.swift in Sources */,
 				A6B03C2E22D3DAD900C12DE5 /* SelectCustom.swift in Sources */,
 				A6B03C2C22D3CF6000C12DE5 /* TopicSelect.swift in Sources */,
 				A6B03C3222D3DF2F00C12DE5 /* WordView.swift in Sources */,
