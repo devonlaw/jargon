@@ -20,12 +20,7 @@ class WebView: UIViewController, WKNavigationDelegate, WKUIDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         let req = URLRequest(url: urlMy!)
-        //webView.loadHTMLString("<html><body><p>Hello!</p></body></html>", baseURL: htmlURL!)
         webView.load(req)
-        //webView?.navigationDelegate = self
-        //webView?.uiDelegate = self
-        //webView!.loadFileURL(htmlURL!, allowingReadAccessTo: htmlURL!)
-        //self.view.addSubview(webView)
     }
     
     
